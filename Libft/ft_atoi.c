@@ -1,38 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/10 18:10:29 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/08 20:19:31 by gavivas-         ###   ########.fr       */
+/*   Created: 2024/03/08 20:05:04 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/03/09 00:15:28 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_atoi(const char *str)
 {
-	int				a;
-	unsigned char	l;
+	int	a;
+	int	i;
+	int	sign;
 
-	l = c;
 	a = 0;
-	while (s[a] != '\0' && s[a] != l)
+	i = 0;
+	sign = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '+' || str[i] == '-')
 	{
-		a++;
+		if (str[i] == '-')
+			sign = sign * (-1);
+		i++;
 	}
-	if (s[a] == l)
-		return ((char *)&s[a]);
-	return (NULL);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		a = a * 10 + (str[i] - '0');
+		i++;
+	}
+	return (a * sign);
 }
-/*int	main(void)
-{ 
-	int c = 'm';
-	char s[20] = "Hola mundo";
+/* int main()
+{
+    const char a[50] = "-+-+-123";
 	
-	printf("%s \n", ft_strchr(s, c));
-	printf("%s", strchr(s, c));
-	return (0);
-}*/
+    
+    printf("%d", ft_atoi(a));
+    return(0);
+}  */

@@ -6,12 +6,11 @@
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:06:33 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/01/26 19:19:01 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/03/08 20:19:54 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <ctype.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
