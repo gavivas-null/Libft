@@ -12,4 +12,4 @@ keyhr.42-c-format \
 DoKca.42-ft-count-line \
 kube.42header \
 ColeHughes.42-snippets \
-nasanov.42-comment \
+nasanov.42-comment
