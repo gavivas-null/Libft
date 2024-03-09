@@ -6,7 +6,7 @@
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 20:05:04 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/09 00:15:28 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/03/09 16:15:45 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_atoi(const char *str)
 }
 /* int main()
 {
-    const char a[50] = "-+-+-123";
+    const char a[50] = "-+123";
 	
     
     printf("%d", ft_atoi(a));

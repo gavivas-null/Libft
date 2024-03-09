@@ -6,7 +6,7 @@
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 17:30:50 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/08 21:02:45 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/03/09 18:47:35 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdio.h>
 # include <string.h>
+# include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
@@ -35,5 +36,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
