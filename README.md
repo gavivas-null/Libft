@@ -6,6 +6,8 @@ https://docs.google.com/spreadsheets/d/1GxrGF-fh_mkrqdvH72GYBYOrDxGaQTre6hxoPSlZ
 https://github.com/cacharle/c_formatter_42 \
 https://github.com/wiljimen \
 https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l?view=msvc-170
+https://www.phind.com/search?home=true \
+https://replit.com/@gavivas-/Phind-Code-Snippet#main.c \
 https://www.phind.com/search?home=true
 
 Mis extensiones VSCODE: \
