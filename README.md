@@ -5,7 +5,8 @@ https://42evaluators.com/ \
 https://docs.google.com/spreadsheets/d/1GxrGF-fh_mkrqdvH72GYBYOrDxGaQTre6hxoPSlZHlY/edit#gid=171328109 \
 https://github.com/cacharle/c_formatter_42 \
 https://github.com/wiljimen \
-https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l?view=msvc-170 \
+https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l?view=msvc-170
+https://www.phind.com/search?home=true
 
 Mis extensiones VSCODE: \
 
