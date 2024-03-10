@@ -8,7 +8,8 @@ https://github.com/wiljimen \
 https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l?view=msvc-170
 https://www.phind.com/search?home=true \
 https://replit.com/@gavivas-/Phind-Code-Snippet#main.c \
-https://www.phind.com/search?home=true
+https://www.phind.com/search?home=true \
+https://github.com/mnieto-m
 
 Mis extensiones VSCODE: \
 
