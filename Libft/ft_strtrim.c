@@ -6,11 +6,12 @@
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 17:19:31 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/10 21:11:10 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/03/14 21:03:52 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 //s1: La string que debe ser recortada.
 //
@@ -36,32 +37,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	j = ft_strlen(s1);
 	while (j > 0 && ft_strchr(set, s1[j]))
 		j--;
-	if (i > j)
-		return (ft_strdup(""));
-	len = j - i + 1;
-	restr = malloc(sizeof(char) * (len + 1));
-	if (restr == NULL)
-		return (NULL);
-	ft_memcpy(restr, s1 + i, len);
-	restr[len] = '\0';
-	return (restr);
+	return (ft_substr(s1, i, j - i + 1));
 }
-//NO PASA PACO -S//
-/* int	main(void)
-{
-	char		*res;
-	char const	*s;
-
-	s = "   Hola Mundo!   ";
-	res = ft_strtrim(s, "\n\t");
-	if (res == NULL)
-	{
-		printf("Error: ft_strtrim devolvió NULL.\n");
-		return (1);
-	}
-	printf("Cadena original: " % s "\n", s);
-	printf("Cadena recortada: " % s "\n", res);
-	free(res);
-	return (0);
-}
- */
+//SI PASA PACO -S//

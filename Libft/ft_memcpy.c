@@ -6,13 +6,13 @@
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 18:07:26 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/03 15:55:47 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/03/14 20:10:00 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
