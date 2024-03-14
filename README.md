@@ -9,7 +9,8 @@ https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/atoi-atoi-l-wt
 https://www.phind.com/search?home=true \
 https://replit.com/@gavivas-/Phind-Code-Snippet#main.c \
 https://www.phind.com/search?home=true \
-https://github.com/mnieto-m
+https://github.com/mnieto-m \
+https://docs.google.com/spreadsheets/d/1XTkCLxPeR4qe7sDKVAO01igtLPMwbHJnW4XOaDxnv00/edit#gid=171328109
 
 Mis extensiones VSCODE: \
 
