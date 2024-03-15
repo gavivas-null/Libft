@@ -11,6 +11,7 @@ https://replit.com/@gavivas-/Phind-Code-Snippet#main.c \
 https://www.phind.com/search?home=true \
 https://github.com/mnieto-m \
 https://docs.google.com/spreadsheets/d/1XTkCLxPeR4qe7sDKVAO01igtLPMwbHJnW4XOaDxnv00/edit#gid=171328109 \
+https://github.com/Gabriel-Em/42_AcademyPlus---Libft---/blob/master/Libft%20-%20Subject(EN).pdf \
 https://github.com/xicodomingues/francinette ESTE ES PACO!! AL ABRIR EL README EXPLICA COMO INSTALARLO 
 
 Mis extensiones VSCODE: \
