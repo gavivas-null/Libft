@@ -36,15 +36,20 @@ ft_split.c \
 
 OBJ	=	$(SRC:.c=.o)
 CC	 =	gcc
-FLAGS	=	-Wall -Werror -Wextra
+AR = ar
+CCFLAGS	=	-Wall -Werror -Wextra
+ARFLAG = r
 NAME    =	libft.a
-${NAME}: ${OBJ}
-	@ar r ${NAME} ${OBJ}
+
 all: ${NAME}
+
+${NAME}: ${OBJ}
+	$(AR) $(ARFLAG) $(NAME) $(OBJ) 
+
 clean:
-	@rm -f ${OBJ}
+	rm -f ${OBJ}
 fclean: clean 
-	@rm -f ${NAME}
+	rm -f ${NAME}
 re: fclean all
-.PHONY:
-	all clean fclean re
+
+.PHONY: all clean fclean re
