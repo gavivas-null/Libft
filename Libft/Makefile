@@ -34,17 +34,23 @@ ft_strmapi.c \
 ft_itoa.c \
 ft_split.c \
 
+SRCBONUS	=	ft_lstnew.c \
+
+OBJBONUS	=	$(SRCBONUS:.c=.o)
 OBJ	=	$(SRC:.c=.o)
 CC	 =	gcc
 AR = ar
 CCFLAGS	=	-Wall -Werror -Wextra
-ARFLAG = cr
+ARFLAG = r
 NAME =	libft.a
 
 all: ${NAME}
 
 ${NAME}: ${OBJ}
 	$(AR) $(ARFLAG) $(NAME) $(OBJ) 
+
+bonus : $(OBJS) $(OBJBONUS)
+	$(AR) $(ARFLAG) $(NAME) $(OBJBONUS) $(OBJS)
 
 clean:
 	rm -f ${OBJ} ${OBJBONUS}
