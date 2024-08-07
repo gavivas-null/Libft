@@ -38,8 +38,8 @@ OBJ	=	$(SRC:.c=.o)
 CC	 =	gcc
 AR = ar
 CCFLAGS	=	-Wall -Werror -Wextra
-ARFLAG = r
-NAME    =	libft.a
+ARFLAG = cr
+NAME =	libft.a
 
 all: ${NAME}
 
@@ -47,7 +47,7 @@ ${NAME}: ${OBJ}
 	$(AR) $(ARFLAG) $(NAME) $(OBJ) 
 
 clean:
-	rm -f ${OBJ}
+	rm -f ${OBJ} ${OBJBONUS}
 fclean: clean 
 	rm -f ${NAME}
 re: fclean all
