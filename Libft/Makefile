@@ -35,6 +35,7 @@ ft_itoa.c \
 ft_split.c \
 
 SRCBONUS	=	ft_lstnew.c \
+ft_lstadd_front.c \
 
 OBJBONUS	=	$(SRCBONUS:.c=.o)
 OBJ	=	$(SRC:.c=.o)

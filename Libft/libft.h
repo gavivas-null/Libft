@@ -6,7 +6,7 @@
 /*   By: gabo <gabo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 17:30:50 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/07 19:46:10 by gabo             ###   ########.fr       */
+/*   Updated: 2024/08/08 19:56:47 by gabo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,6 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
