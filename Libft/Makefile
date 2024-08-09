@@ -37,6 +37,8 @@ ft_split.c \
 SRCBONUS	=	ft_lstnew.c \
 ft_lstadd_front.c \
 ft_lstsize.c \
+ft_lstlast.c \
+ft_lstadd_back.c \
 
 OBJBONUS	=	$(SRCBONUS:.c=.o)
 OBJ	=	$(SRC:.c=.o)
@@ -51,7 +53,7 @@ all: ${NAME}
 ${NAME}: ${OBJ}
 	$(AR) $(ARFLAG) $(NAME) $(OBJ) 
 
-bonus : $(OBJS) $(OBJBONUS)
+bonus : ${OBJS} ${OBJBONUS}
 	$(AR) $(ARFLAG) $(NAME) $(OBJBONUS) $(OBJS)
 
 clean:
