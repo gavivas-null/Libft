@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "libft.h"
 
 static int	ft_countwords(char const *s, char c)
@@ -89,7 +88,7 @@ int main(void)   //MAIN DE ft_countwords
 /* int	main(void)
 {
 	char	*s = "Hola Mi Gente";
-	char	c = '';
+	char	c = ' ';
 
 	printf(".%s.\n", ft_split(s, c));
 	return 0;

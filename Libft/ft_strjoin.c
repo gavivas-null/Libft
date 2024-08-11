@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabo <gabo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 16:33:17 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/10 17:18:45 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/08/11 18:27:09 by gabo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//s1: La primera string.
-//
-//s2: La string a añadir a ’s1’.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -1,12 +1,5 @@
 #include "libft.h"
 
-//lst: la dirección de un puntero al primer nodo de una lista.
-//new: un puntero al nodo que añadir al principio de la lista.
-//Valor devuelto: Nada
-//Funciones autorizadas: Ninguna
-//new: nuevo nodo.
-//next: puntero al siguiente nodo.
-//Descripción: Añade el nodo ’new’ al principio de la lista ’lst’.
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (new == NULL)

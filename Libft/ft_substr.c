@@ -3,25 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabo <gabo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:42:37 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/10 16:28:02 by gavivas-         ###   ########.fr       */
+/*   Updated: 2024/08/11 18:27:36 by gabo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//'start' es el indice del caracter s desde el que empieza la substring.
-//
-//'s' es la string desde la que crear la substring.
-//
-//'len' es la longitud maxima de la substring.
-//
-//la substring empieza desde el indice 'start'
-//y tiene una longitud maxima 'len'.
-//
-//len te indica el tamaño de la subcadena
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

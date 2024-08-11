@@ -1,12 +1,5 @@
 #include "libft.h"
 
-//content: el contenido con el que crear el nodo.
-//Valor devuelto: El nuevo nodo
-//Funciones autorizadas: malloc
-//content: el contenido con el que crear el nodo.
-//new: nuevo nodo.
-//next: puntero al siguiente nodo.
-//Descripción: Crea un nuevo nodo utilizando malloc(3).
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
