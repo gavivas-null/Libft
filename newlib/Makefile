@@ -49,7 +49,7 @@ OBJ	=	$(SRC:.c=.o)
 CC	 =	gcc
 AR = ar
 CFLAGS	=	-Wall -Werror -Wextra
-ARFLAG = r
+ARFLAG = -rcs
 NAME =	libft.a
 
 all: ${NAME}
