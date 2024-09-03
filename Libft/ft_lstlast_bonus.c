@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 18:51:49 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/19 18:55:25 by gavivas-         ###   ########.fr       */
+/*   Created: 2024/08/19 18:52:27 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 18:55:38 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	else
-		return (0);
-}
+	t_list	*new;
 
-/* int	main(void)
-{
-	printf("%d, \n", ft_isprint(164));
-	printf("%d", isprint(176));
-	return (0);
-} */
+	new = lst;
+	while (new != NULL && new->next != NULL)
+	{
+		new = new->next;
+	}
+	return (new);
+}

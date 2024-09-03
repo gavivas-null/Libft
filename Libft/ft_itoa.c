@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/16 18:13:25 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/03/16 20:50:42 by gavivas-         ###   ########.fr       */
+/*   Created: 2024/08/19 18:51:53 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 19:56:33 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,32 +50,29 @@ char	*ft_itoa(int n)
 	char	*new;
 
 	i = 0;
+	if (n == 0 || n == -2147483648)
+		return (ft_special_cases(n));
 	if (n < 0)
 	{
 		n = -n;
 		i = 1;
 	}
-	if (n == 0 || n == -2147483648)
-		return (ft_special_cases(n));
-	else
-	{
-		len = ft_count_digits(n);
-		if (i == 1)
-			len += 1;
-		new = malloc(sizeof(char) * (len + 1));
-		if (new == NULL)
-			return (NULL);
-		new[len] = '\0';
-		new[0] = '-';
-		ft_while(n, len, new);
-	}
+	len = ft_count_digits(n);
+	if (i == 1)
+		len += 1;
+	new = malloc(sizeof(char) * (len + 1));
+	if (new == NULL)
+		return (NULL);
+	new[len] = '\0';
+	new[0] = '-';
+	ft_while(n, len, new);
 	return (new);
 }
 
-/* int	main(void)
-{
-	int n = -0;
-	char *str = ft_itoa(n);
-	printf("%s\n", str);
-	return (0);
-} */
+// int	main(void)
+// {
+// 	int n = -2147483648;
+// 	char *str = ft_itoa(n);
+// 	ft_putstr_fd(str, 1);
+// 	return (0);
+// }

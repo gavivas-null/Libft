@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabo <gabo@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/10 17:19:31 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/11 18:27:29 by gabo             ###   ########.fr       */
+/*   Created: 2024/08/19 18:54:33 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 18:56:50 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
-	size_t	len;
-	char	*restr;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);
@@ -29,4 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }
-//SI PASA PACO -S//

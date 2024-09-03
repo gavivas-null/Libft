@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 18:51:49 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/19 18:55:25 by gavivas-         ###   ########.fr       */
+/*   Created: 2024/08/19 18:52:30 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 18:55:40 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	else
-		return (0);
-}
+	t_list	*aux;
+	t_list	*final;
+	void	*fcontent;
 
-/* int	main(void)
-{
-	printf("%d, \n", ft_isprint(164));
-	printf("%d", isprint(176));
-	return (0);
-} */
+	final = 0;
+	while (lst)
+	{
+		fcontent = f(lst->content);
+		aux = ft_lstnew(fcontent);
+		if (!aux)
+		{
+			del(fcontent);
+			ft_lstclear(&aux, del);
+		}
+		ft_lstadd_back(&final, aux);
+		lst = lst->next;
+	}
+	return (final);
+}

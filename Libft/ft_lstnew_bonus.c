@@ -1,39 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 18:52:46 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/19 18:55:50 by gavivas-         ###   ########.fr       */
+/*   Created: 2024/08/19 18:52:34 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 18:55:42 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	i;
+	t_list	*new;
 
-	i = 0;
-	if (src == NULL && dst == NULL && n)
+	new = malloc(sizeof(t_list));
+	if (!new)
 		return (NULL);
-	while (i < n)
-	{
-		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
-		i++;
-	}
-	return (dst);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
 
-/* int	main(void)
+/* int	main()
 {
-	char src[] = "";
-	char dest[20];
-	size_t d = 5;
-
-	printf("%s\n", ft_memcpy(dest, src, d));
-	printf("%s", memcpy(dest,src, d));
-	return (0);
+	int	valor = 42;
+    t_list *node = ft_lstnew(&valor);
+    if (node)
+    {
+		printf("direccion hexa del nodo: %p\n", (void *)node);
+        printf("Contenido del nodo: %d\n", *(int *)(node->content));
+		free(node);
+    }
+    else
+        printf("Error al crear el nodo\n");
+    return 0;
 } */

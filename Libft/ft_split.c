@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabo <gabo@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: gavivas- <gavivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/08 20:05:04 by gavivas-          #+#    #+#             */
-/*   Updated: 2024/08/11 21:55:51 by gabo             ###   ########.fr       */
+/*   Created: 2024/08/19 18:53:21 by gavivas-          #+#    #+#             */
+/*   Updated: 2024/08/19 20:09:17 by gavivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,11 +97,18 @@ int main(void)   //MAIN DE ft_countwords
 	printf(".%s.\n", ft_copywords(s, c, &i));
 	return 0;
 } */
-/* int	main(void)
+/*
+int	main(void)
 {
 	char	*s = "Hola Mi Gente";
 	char	c = ' ';
+ 	char **splitt = ft_split(s, c);
 
-	printf(".%s.\n", ft_split(s, c));
+	int i = 0;
+	while (splitt[i])
+	{
+		ft_putstr_fd(splitt[i], 1);
+		i++;
+	}
 	return 0;
-} */
+}*/
